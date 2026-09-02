@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<HTML lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+		<title>LoftSpace</title>
+		<meta name="auter" content="Газизуллина Дина Ильясовна">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div id="hatter">
+			<div id="hatter1"><p id="LoftSpace">LoftSpace</p></div>
+			
+			<!-- Оригинальное меню -->
+			<div class="desktop-menu">
+				<div class="d1"><a href="#aboutus"><p>О нас</p></a></div>
+				<div class="d1"><a><p>Каталог</p></a></div>
+				<div class="d1"><a href="#projects"><p>Проекты</p></a></div>
+				<div class="d1"><a href="#Photo"><p>Фотогаллерея</p></a></div>
+				<div class="d1"><a href="#Reviews"><p>Отзывы</p></a></div>
+				<div class="d1"><a href="#News"><p>Новости</p></a></div>
+				<div class="d1"><a href="#Contacts"><p>Контакты</p></a></div>
+			</div>
+			
+			<!-- Контакты (компьютер/планшет) -->
+			<div class="desktop-contacts">
+				<div class="d1">+7 (843) 366 17 60</div>
+				<div class="d1"><p id="p1" class="open-modal-btn">Оставить заявку</p></div>
+			</div>
+			
+			<!-- Бургер меню (планшет/телефон)-->
+			<div class="burger-container">
+				<div class="burger-icon" id="burgerIcon">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+			</div>
+		</div>
+		
+		<!-- Бургер меню (выпадающее)-->
+		<div class="burger-menu" id="burgerMenu">
+			<div class="burger-menu-content">
+				<div class="burger-menu-header">
+					<div class="burger-logo">LoftSpace</div>
+					<div class="burger-close" id="burgerClose">&times;</div>
+				</div>
+				<nav class="burger-nav">
+					<a href="#aboutus">О нас</a>
+					<a>Каталог</a>
+					<a href="#projects">Проекты</a>
+					<a href="#Photo">Фотогаллерея</a>
+					<a href="#Reviews">Отзывы</a>
+					<a href="#News">Новости</a>
+					<a href="#Contacts">Контакты</a>
+				</nav>
+				<div class="burger-contacts">
+					<div class="burger-phone">+7 (843) 366 17 60</div>
+					<div class="burger-request open-modal-btn">Оставить заявку</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Модальное око с формой -->
+		<div class="modal-overlay" id="modalOverlay">
+			<button class="modal-close" id="modalClose">&times;</button>
+			<div class="modal-container">
+				<!-- Форма заявки -->
+				<div class="form-container" id="formContainer">
+					<h2 class="form-title">Заявка на звонок</h2>
+					<p class="form-subtitle">Заполните заявку, мы вам перезвоним в течении 30 минут и<br>ответим на все интересующие вопросы</p>
+					
+					<form id="callbackForm">
+						<div class="form-row">
+							<div class="form-group">
+								<input type="text" id="userName" name="userName" placeholder=" " required>
+								<label for="userName">Как вас зовут?</label>
+							</div>
+							<div class="form-group">
+								<input type="tel" id="userPhone" name="userPhone" placeholder=" " required>
+								<label for="userPhone">Ваш телефон</label>
+							</div>
+						</div>
+						<div class="form-checkbox">
+							<label class="checkbox-label">
+								<input type="checkbox" id="agreeCheckbox" required>
+								<span class="checkmark"></span>
+								<span class="checkbox-text">Я созгасен на обработку персональных данных</span>
+							</label>
+						</div>
+						
+						<button type="submit" class="submit-btn">Оставить заявку</button>
+					</form>
+				</div>
+				<!-- Сообщение об успешной отправке -->
+				<div class="success-container" id="successContainer" style="display:none;">
+					<h2 class="success-title">Ваша заявка принята!</h2>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Карусель -->
+		<div id="main">
+			<div id="main0">
+				<div id="main1"><p>От мечты<br>к реальности<br>с LoftSpace</p></div>
+				<!-- Слайд 1 -->
+				<div class="carousel-slide active">
+					<div class="main2"><img class="img1" src="art/art1.png" alt="Дом1"></div>
+					<div class="d2"><p>Выбрать дом</p></div>
+					<div class="d5">01</div>
+					<div class="line1"><hr></div>
+					<div class="circle"></div>
+					<div class="line2"><hr></div>
+					<div class="d6">03</div>
+				</div>
+				<!-- Слайд 2 -->
+				<div class="carousel-slide">
+					<div class="main2"><img class="img1" src="art/art2.png" alt="Дом2"></div>
+					<div class="d2"><p>Выбрать дом</p></div>
+					<div class="d5">01</div>
+					<div class="line1"><hr></div>
+					<div class="circle"></div>
+					<div class="line2"><hr></div>
+					<div class="d6">03</div>
+				</div>
+				<!-- Слайд 3 -->
+				<div class="carousel-slide">
+					<div class="main2"><img class="img1" src="art/art3.png" alt="Дом3"></div>
+					<div class="d2"><p>Выбрать дом</p></div>
+					<div class="d5">01</div>
+					<div class="line1"><hr></div>
+					<div class="circle"></div>
+					<div class="line2"><hr></div>
+					<div class="d6">03</div>
+				</div>
+			</div>
+			<div class="carousel-btn prev-btn"><p class="p2"><</p></div>
+			<div class="carousel-btn next-btn"><p class="p2">></p></div>
+		</div> 
+		
+		<!-- О нас -->
+		<div id="aboutus">
+			<div class="image4"><img class="img4" src="art/art4.png" alt="Дом4"></div>
+			<div class="frame133">
+				<h2 class="text1">LoftSpace</h2>
+				<p class="text2">Это уникальная компания, основанная в 2015 году в Казани,
+					специадизирующаяся на строительстве домов в стиле лофт.<br>Компания предлагает
+					полный спектр услуг по проектированию, строительству и отделке лофтов, а также
+					осуществляет продажу готовых домой и земельных участков с возможностью строительства.</p>
+				<p class="text2">Все проекты разрабатываются опытными архитекторами и дизайнерами, 
+					которые учитывают все пожелания клиентов и особенности участка.</p>
+				<h3 class="text3">Подробнее</h3>
+			</div>
+			<div class="frame123">
+				<div class="frame80">
+					<div class="image5"><img class="img-frame80" src="art/frame80.png" alt="Значек1"></div>
+					<div class="text4"><h2>1000+</h2></div>
+					<div class="text5"><p>Успешно реализованных проектов домов в стиле лофт</p></div>
+				</div>
+				<div class="frame81">
+					<div class="image5"><img class="img-frame80" src="art/frame81.png" alt="Значек2"></div>
+					<div class="text4"><h2>Материалы</h2></div>
+					<div class="text5"><p>Используем экологически чистые материалы при строительстве</p></div>
+				</div>
+				<div class="frame82">
+					<div class="image5"><img class="img-frame80" src="art/frame82.png" alt="Значек2"></div>
+					<div class="text4"><h2>10 лет</h2></div>
+					<div class="text5"><p>Гарантия на все виды работ и материалы</p></div>
+				</div>
+				<div class="frame83">
+					<div class="image5"><img class="img-frame80" src="art/frame83.png" alt="Значек3"></div>
+					<div class="text4"><h2>Опыт</h2></div>
+					<div class="text5"><p>Персонал с опытом работы боле 5 лет в сфере строительсва</p></div>
+				</div>
+			</div>
+		</div>
+		
+		<!--Популярные проекты-->
+		<div class="group134" id="projects">
+			<div class="text6">
+				<h2>Популярные проекты</h2>
+			</div>
+			<div class="projects-carousel">
+				<div class="projects-track">
+					<!-- Проект 1 -->
+					<div class="project-slide">
+						<img class="project-image" src="art/art2.png" alt="Loft Barn-33">
+						<div class="project-info">
+							<div class="name1"><h2>Loft Barn-33</h2></div>
+							<div><hr></div>
+							<div class="price"><p>От <span style="color: rgba(209,146,26,1)">9 800 000</span> руб</p></div>
+							<div class="square"><p>Площадь: <span style="color: rgba(209,146,26,1)">133 кв.м</span></p></div>
+						</div>
+					</div>
+					<!-- Проект 2 -->
+					<div class="project-slide">
+						<img class="project-image" src="art/art3.png" alt="Loft H-47">
+						<div class="project-info">
+							<div class="name1"><h2>Loft H-47</h2></div>
+							<div><hr></div>
+							<div class="price"><p>От <span style="color: rgba(209,146,26,1)">5 650 000</span> руб</p></div>
+							<div class="square"><p>Площадь: <span style="color: rgba(209,146,26,1)">47 кв.м</span></p></div>
+						</div>
+					</div>
+					<!-- Проект 3 -->
+					<div class="project-slide">
+						<img class="project-image" src="art/art5.png" alt="Loft Lato-1">
+						<div class="project-info">
+							<div class="name1"><h2>Loft Lato-1</h2></div>
+							<div><hr></div>
+							<div class="price"><p>От <span style="color: rgba(209,146,26,1)">7 500 000</span> руб</p></div>
+							<div class="square"><p>Площадь: <span style="color: rgba(209,146,26,1)">56 кв.м</span></p></div>
+						</div>
+					</div>
+					<!-- Проект 4 -->
+					<div class="project-slide">
+						<img class="project-image" src="art/art6.png" alt="Loft Lato-2">
+						<div class="project-info">
+							<div class="name1"><h2>Loft Lato-2</h2></div>
+							<div><hr></div>
+							<div class="price"><p>От <span style="color: rgba(209,146,26,1)">6 800 000</span> руб</p></div>
+							<div class="square"><p>Площадь: <span style="color: rgba(209,146,26,1)">46 кв.м</span></p></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="text7">
+				<h2>Смотреть еще</h2>
+			</div>
+		</div>
+		
+		<!--Этапы работы с нами-->
+		<div class="work">
+			<div class="text8"><h2>Этапы работы с нами</h2></div>
+			<div class="frame152">
+				<div class="frame1">
+					<div class="t1"><p>01</p></div>
+					<div class="t2"><h3>Заключение договора</h3></div>
+					<div class="t3"><p>Обсудим проект и подпишем бумаги с фиксированной ценой.</p></div>
+				</div>
+				<div class="frame1">
+					<div class="t1"><p>02</p></div>
+					<div class="t2"><h3>Изготовление дома</h3></div>
+					<div class="t3"><p>За 60 дней соберем дом на нашем производстве.</p></div>
+				</div>
+				<div class="frame1">
+					<div class="t1"><p>03</p></div>
+					<div class="t2"><h3>Монтаж на участке</h3></div>
+					<div class="t3"><p>Наши рабочие за сутки установят дом на участке.</p></div>
+				</div>
+				<div class="frame1">
+					<div class="t1"><p>04</p></div>
+					<div class="t2"><h3>Прием работы</h3></div>
+					<div class="t3"><p>Подписание акта приема работ по каждому этапу строительсва.</p></div>
+				</div>
+			</div>
+		</div>
+		
+		<!--Фотогаллерея-->
+		<div class="photo" id="Photo">
+			<div class="text9"><h2>Фотогаллерея</h2></div>
+			<div class="carousel2">
+				<div class="carousel2-track">
+					<div class="carousel2-slide"><img class="photo1" src="art/art7.png" alt="Фото 1"></div>
+					<div class="carousel2-slide"><img class="photo1" src="art/art8.png" alt="Фото 2"></div>
+					<div class="carousel2-slide"><img class="photo1" src="art/art9.png" alt="Фото 3"></div>
+					<div class="carousel2-slide"><img class="photo1" src="art/art10.png" alt="Фото 4"></div>
+					<div class="carousel2-slide"><img class="photo1" src="art/art11.png" alt="Фото 5"></div>
+					<div class="carousel2-slide"><img class="photo1" src="art/art12.png" alt="Фото 6"></div>
+					<div class="carousel2-slide"><img class="photo1" src="art/art13.png" alt="Фото 7"></div>
+					<div class="carousel2-slide"><img class="photo1" src="art/art14.png" alt="Фото 8"></div>
+				</div>
+			</div>
+		</div>
+		
+		<!--Отзывы-->
+		<div class="reviews" id="Reviews">
+			<div class="text10"><h2>Отзывы</h2></div>
+			<div class="reviews1">
+				<div class="photo2">
+					<img class="reviews1-1" src="art/reviews1.png" alt="Отзово фото 1">
+					<img class="reviews1-2" src="art/reviews2.png" alt="Отзово фото 1">
+				</div>
+				<div class="reviews-text0">
+					<div class="reviews-title">
+						<div class="photo3"><img class="reviews1-A" src="art/photo1.png" alt="Отзово фото 1"></div>
+						<div class="reviews-text1"><h2>Андрей Мотовилов</h2></div>
+					</div>
+					<div class="reviews-text2">
+						<p>
+							Я обратился в LoftSpace, чтобы построить дом для своей 
+							семьи, и они превзошли все мои ожидания. Проект был 
+							разработан с учетом всех наших потребностей и пожеланий, 
+							а строительство прошло быстро и без проблем. Мы очень 
+							довольны результатом, спасибо!
+						</p>
+					</div>
+					<div class="reviews-text3"><p><span class="reviews-text31">Проект: </span><u>Loft Barn-56</u></p></div>
+					<div class="reviews-text3"><p><span class="reviews-text31">Площадь:</span> 156 кв.м</p></div>
+				</div>
+			</div>
+			<div class="reviews2">
+				<div class="photo4">
+					<img class="reviews1-3" src="art/reviews3.png" alt="Отзово фото 1">
+					<img class="reviews1-4" src="art/reviews4.png" alt="Отзово фото 1">
+				</div>
+				<div class="reviews-text3">
+					<div class="reviews-title">
+						<div class="photo3"><img class="reviews1-A" src="art/photo2.png" alt="Отзово фото 1"></div>
+						<div class="reviews-text1"><h2>Мария Селеванова</h2></div>
+					</div>
+					<div class="reviews-text2">
+						<p>
+							Я очень довольна своим новым домом. Все мои пожелания 
+							были учтены, и дом получился именно таким, как я хотела. 
+							Качество работы на высоком уровне, а сотрудники 
+							компании всегда готовы помочь и ответить на любые 
+							вопросы.
+						</p>
+					</div>
+					<div class="reviews-text3"><p><span class="reviews-text31">Проект:</span> <u>Loft H-78</u></p></div>
+					<div class="reviews-text3"><p><span class="reviews-text31">Площадь:</span> 178 кв.м</p></div>
+				</div>
+			</div>
+		</div>
+		
+		<!--Новости-->
+		<div class="news" id="News">
+			<div class="text11"><h2>Новости</h2></div>
+			<div class="news-carousel">
+				<div class="news-track">
+					<div class="news-slide">
+						<img class="news-image" src="art/news1.png" alt="Новость 1">
+						<div class="news-info">
+							<div class="news0">
+								<img class="news-arrow news-arrow1" src="art/news01.png" alt="Стрелочка">
+								<img class="news-arrow news-arrow2" src="art/news02.png" alt="Стрелочка">
+							</div>
+							<div class="news-text">
+								<p>
+									Компания провела благотворительную акцию, 
+									в ходе которой были построены дома для 
+									малоимущих семей в разных регионах России.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="news-slide">
+						<img class="news-image" src="art/news2.png" alt="Новость 2">
+						<div class="news-info">
+							<div class="news0">
+								<img class="news-arrow news-arrow1" src="art/news01.png" alt="Стрелочка">
+								<img class="news-arrow news-arrow2" src="art/news02.png" alt="Стрелочка">
+							</div>
+							<div class="news-text">
+								<p>
+									LoftSpace представила новый проект 
+									“Лофт-эко”, который сочетает в себе 
+									экологичность и лофт-стиль.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="news-slide">
+						<img class="news-image" src="art/news3.png" alt="Новость 3">
+						<div class="news-info">
+							<div class="news0">
+								<img class="news-arrow news-arrow1" src="art/news01.png" alt="Стрелочка">
+								<img class="news-arrow news-arrow2" src="art/news02.png" alt="Стрелочка">
+							</div>
+							<div class="news-text">
+								<p>
+									Компания разработала уникальную систему 
+									вентиляции, которая обеспечивает оптимальный 
+									микроклимат и снижает затраты на отопление.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="news-slide">
+						<img class="news-image" src="art/news4.png" alt="Новость 4">
+						<div class="news-info">
+							<div class="news0">
+								<img class="news-arrow news-arrow1" src="art/news01.png" alt="Стрелочка">
+								<img class="news-arrow news-arrow2" src="art/news02.png" alt="Стрелочка">
+							</div>
+							<div class="news-text">
+								<p>
+									Компания номинирована на премию “Building 
+									of the Year” 2024 за лучший проект жилого 
+									комплекса в стиле лофт в России.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--Контакты-->
+		<div class="contacts" id="Contacts">
+			<div class="contacts-art"><img class="contacts-art-1" src="art/contacts.png" alt="Карта"></div>
+			<div class="contacts-info">
+				<div class="contacts-title"><h2>Как нас найти</h2></div>
+				<div class="contacts-info1">
+					<div class="contacts-frame"><img class="contacts-frame1" src="art/contacts-frame1.png" alt="Метка"></div>
+					<div class="contacts-text-block">
+						<div class="contacts-title1"><h3>Головной офис:</h2></div>
+						<div class="contacts-text"><p>Г. Казань, ул.  Островского 98, офис 202</p></div>
+					</div>
+				</div>
+				<div class="contacts-info1">
+					<div class="contacts-frame"><img class="contacts-frame1" src="art/contacts-frame2.png" alt="Метка"></div>
+					<div class="contacts-text-block">
+						<div class="contacts-title1"><h3>Электронная почта:</h2></div>
+						<div class="contacts-text"><p>loft-spacehouse@gmail.com</p></div>
+					</div>
+				</div>
+				<div class="contacts-title2"><h3>Остались вопросы?</h3></div>
+				<div class="contacts-text1">
+					<p>
+						Заполните заявку, мы вам перезоним 
+						в течении 30 минут и ответим на все 
+						интерисующие вопросы.
+					</p>
+				</div>
+				<div class="contacts-button open-modal-btn"><h2>Оставить заявку</h2></div>
+			</div>
+		</div>
+		
+		<!--Подвал-->
+		<div class="basement">
+			<div class="basement1">
+				<div class="basement-text1"><h2>LoftSpace</h2></div>
+				<div class="basement-text2"><p>&copy; Все права защищены</p></div>
+				<div class="basement-text2"><p><u>Политика конфединциальности</u></p></div>
+			</div>
+			<div class="basement-row">
+				<div class="basement2">
+					<div class="basement-text3"><h2>О нашей компании</h2></div>
+					<div class="basement-text3"><h2>Проекты</h2></div>
+					<div class="basement-text3"><h2>Каталог</h2></div>
+					<div class="basement-text3"><h2>Новости</h2></div>
+					<div class="basement-text3"><h2>Отзывы</h2></div>
+					<div class="basement-text3"><h2>Фотогаллерея</h2></div>
+				</div>
+				<div class="basement3">
+					<div class="basement-text3"><h2>loft barn-33</h2></div>
+					<div class="basement-text3"><h2>loft barn-29</h2></div>
+					<div class="basement-text3"><h2>loft lato-1</h2></div>
+					<div class="basement-text3"><h2>loft lato-2</h2></div>
+					<div class="basement-text3"><h2>loft h-47</h2></div>
+				</div>
+			</div>
+			<div class="basement4">
+				<div class="basement-text3"><h2>Контакты</h2></div>
+				<div class="basement-info">
+					<div class="basement-frame"><img class="basement-frame1" src="art/basement1.png" alt="Трубка"></div>
+					<div class="basement-text"><p class="basement-text2">+7(843) 366 17 60<p></div>
+				</div>
+				<div class="basement-info">
+					<div class="basement-frame"><img class="basement-frame1" src="art/basement2.png" alt="Метка"></div>
+					<div class="basement-text"><p class="basement-text2">г. Казань, ул. Оствовского 98, офис 202<p></div>
+				</div>
+				<div class="basement-info">
+					<div class="basement-frame"><img class="basement-frame1" src="art/basement3.png" alt="Письмо"></div>
+					<div class="basement-text"><p class="basement-text2">loft-spacehouse@gmail.com<p></div>
+				</div>
+				<img class="basement-frame2" src="art/basement4.png" alt="Сотсети">
+			</div>
+		</div>
+		
+		<script src="script.js"></script>
+	</body>
+</HTML>
