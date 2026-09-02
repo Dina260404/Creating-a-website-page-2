@@ -12,14 +12,14 @@ function openBurger() {
     burgerMenu.classList.add('open');
     overlay.classList.add('active');
     document.body.style.overflow = 'hidden';
-    if (burgerIcon) burgerIcon.classList.add('active');  // ✅ добавил класс active
+    if (burgerIcon) burgerIcon.classList.add('active'); 
 }
 
 function closeBurger() {
     burgerMenu.classList.remove('open');
     overlay.classList.remove('active');
     document.body.style.overflow = '';
-    if (burgerIcon) burgerIcon.classList.remove('active');  // ✅ убрал класс active
+    if (burgerIcon) burgerIcon.classList.remove('active'); 
 }
 
 if (burgerIcon) {
